@@ -1,0 +1,48 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+palette = 'dpi'
+
+format = """
+$username\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+$direnv\
+$line_break\
+$time\
+$status\
+$shell\
+$character"""
+
+# Inserts a blank line between shell prompts
+add_newline        = true
+
+[character]
+disabled           = false
+success_symbol     = '[❯](bold fg:blue)'
+
+[directory]
+disabled           = false
+style              = '(fg:text-muted)'
+
+[time]
+disabled           = false
+format             = '[$time](fg:text-light) '
+time_format        = '%T'
+use_12hr           = false
+utc_time_offset    = 'local'
+
+[git_branch]
+disabled           = false
+
+[git_status]
+disabled           = false
+staged             = '[++\($count\)](green)'
+
+[palettes.dpi]
+blue               = '#005E85'
+text-light         = '#EFF2F4'
+text-muted         = '#585e62'
