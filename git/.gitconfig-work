@@ -1,0 +1,13 @@
+[user]
+	name = Peter Le
+	email = 
+    signingkey = "~/.ssh/id_rsa.pub"
+
+[core]
+	autocrlf = input
+
+[gpg]
+    format = ssh
+
+[commit]
+    gpgsign = true

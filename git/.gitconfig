@@ -1,0 +1,8 @@
+# The trailing forward slash at the end of the path is important.
+# E.g.
+# [includeIf "gitdir:~/This/Path/Must/Have/A/Trailing/Slash/"]
+[includeIf "gitdir:~/Source/Other/"]
+	path = .gitconfig-ple103
+
+[includeIf "gitdir:~/Source/"]
+	path = .gitconfig-work
